@@ -15,7 +15,7 @@ const App = () => {
       <div className='page'>
         <Navbar />
         <Switch>
-          <Route exact path='' component={Main} />
+          <Route exact path='/' component={Main} />
           <Route exact path='/details/:id' component={DetailView} />
           <Route exact path='/cart' component={Cart} />
           <Route exact path='/contact' component={Contact} />
