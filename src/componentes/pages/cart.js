@@ -18,7 +18,7 @@ const Cart = (props) => {
   ];
 
   const [scroll, setScroll] = useState(false);
-  const [TotalAmount, setTotalAmount] = useState(['']);
+  const [TotalAmount, setTotalAmount] = useState([""]);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -32,72 +32,76 @@ const Cart = (props) => {
     <>
       <div
         style={{ minHeight: "80vh" }}
-        className='container card cart shadow-lg'
+        className='container px-0 mx-0 px-md-auto mx-md-auto '
       >
-        <div className='card-body'>
-          <Table responsve className='mt-3 table table-striped table-dark'>
-            <thead className={scroll ? "my-table" : "bg-black"}>
-              <tr>
-                {cartListHeading.map(({ name, id }) => (
-                  <th key={id} className='text-capitalize'>
-                    {name}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {datas.map((data) => {
-                return (
-                  <tr key={data.id}>
-                    <td className='align-middle'>
-                      <img
-                        className='img rounded-circle '
-                        alt={data.title}
-                        src={data.img}
-                      />
-                    </td>
-                    <td className='align-middle'>{data.title}</td>
-                    <td className='align-middle'>{data.price}</td>
-                    <td className='align-middle'>
-                      <div>
-                        <span className='border p-1'>
-                          <FontAwesomeIcon
-                            icon={faAngleDoubleLeft}
-                            className='text-success cursor'
-                            onClick={(e) => {
-                              if (data.quantity === 1)
-                                return alert("Not allowed less than 1 item");
-                              data.quantity = --data.quantity;
-                              setDatas([...datas]);
-                            }}
-                          />
-                        </span>
-                        <span className='border p-1 px-2'>{data.quantity}</span>
-                        <span className='border p-1'>
-                          <FontAwesomeIcon
-                            icon={faAngleDoubleRight}
-                            className='text-success cursor'
-                            onClick={(e) => {
-                              data.quantity = ++data.quantity;
-                              setDatas([...datas]);
-                              // setTotalAmount([
-                              //   ...TotalAmount,
-                              //   { price: data.quantity * data.price },
-                              // ]);
-                              // console.log([TotalAmount])
-                            }}
-                          />
-                        </span>
-                      </div>
-                    </td>
-                    <td className='align-middle'>
-                      {data.quantity * data.price}
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </Table>
+        <div className='card cart shadow-lg'>
+          <div className='card-body'>
+            <Table responsve className='mt-3 table table-striped table-dark'>
+              <thead className={scroll ? "my-table" : "bg-black"}>
+                <tr>
+                  {cartListHeading.map(({ name, id }) => (
+                    <th key={id} className='text-capitalize'>
+                      {name}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {datas.map((data) => {
+                  return (
+                    <tr key={data.id}>
+                      <td className='align-middle'>
+                        <img
+                          className='img rounded-circle cart-img '
+                          alt={data.title}
+                          src={data.img}
+                        />
+                      </td>
+                      <td className='align-middle'>{data.title}</td>
+                      <td className='align-middle'>{data.price}</td>
+                      <td className='align-middle'>
+                        <div>
+                          <span className='border p-1 cart-amount-icon'>
+                            <FontAwesomeIcon
+                              icon={faAngleDoubleLeft}
+                              className='text-success cursor'
+                              onClick={(e) => {
+                                if (data.quantity === 1)
+                                  return alert("Not allowed less than 1 item");
+                                data.quantity = --data.quantity;
+                                setDatas([...datas]);
+                              }}
+                            />
+                          </span>
+                          <span className='border p-1 px-2 cart-amount-icon'>
+                            {data.quantity}
+                          </span>
+                          <span className='border p-1 cart-amount-icon'>
+                            <FontAwesomeIcon
+                              icon={faAngleDoubleRight}
+                              className='text-success cursor'
+                              onClick={(e) => {
+                                data.quantity = ++data.quantity;
+                                setDatas([...datas]);
+                                // setTotalAmount([
+                                //   ...TotalAmount,
+                                //   { price: data.quantity * data.price },
+                                // ]);
+                                // console.log([TotalAmount])
+                              }}
+                            />
+                          </span>
+                        </div>
+                      </td>
+                      <td className='align-middle'>
+                        {data.quantity * data.price}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </Table>
+          </div>
         </div>
       </div>
     </>

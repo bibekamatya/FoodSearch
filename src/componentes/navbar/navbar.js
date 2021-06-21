@@ -17,8 +17,8 @@ const Navbar = () => {
       <nav
         className={
           scroll
-            ? "navbar navbar-expand-lg fixed-top shadow-lg"
-            : "my-nav navbar navbar-expand-lg fixed-top logo"
+            ? "navbar navbar-expand-lg fixed-top shadow-lg navbar-light"
+            : "my-nav navbar navbar-expand-lg fixed-top logo navbar-light"
         }
       >
         <NavLink className='navbar-brand' to='/'>

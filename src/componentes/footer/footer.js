@@ -34,9 +34,9 @@ const Footer = () => {
                 <div className='social-media'>
                   <ul className='list-inline d-flex justify-content-center'>
                     <li className='p-1 cursor'>
-                      <a className='facebook'>
+                      <Link className='facebook'>
                         <FontAwesomeIcon icon={faFacebook} />
-                      </a>
+                      </Link>
                     </li>
                     <li className='p-1'>
                       <Link className='twitter' to='' title=''>

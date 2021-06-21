@@ -88,7 +88,7 @@ const Main = () => {
         cart={CartIcon}
         cartItem={CartItem}
       />
-      <div className='container main-page App' style={{ Height: "800px" }}>
+      <div className='container main-page App px-4 px-md-0' style={{ Height: "800px" }}>
         {Loading ? (
           <FadeLoader
             size={100}

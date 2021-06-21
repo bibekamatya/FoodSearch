@@ -16,14 +16,14 @@ const RecipeSearchNav = (props) => {
   } = props;
   return (
     <>
-      <nav className='navbar navbar-expand-lg navbar-dark nav-search mb-5'>
+      <nav className='navbar navbar-expand-sm navbar-dark nav-search mb-5'>
         <div className=' pt-1 pl-5 d-sm-none d-md-block d-none d-sm-block'>
           <span>
             {recipeName}
             <span className='searched-item'> {name}</span>
           </span>
         </div>
-        <ul className='navbar-nav ml-auto'>
+        <ul className='navbar-nav ml-sm-auto'>
           <li className='nav-item'>
             <Link
               className='nav-link cursor'
@@ -32,6 +32,11 @@ const RecipeSearchNav = (props) => {
                 state: { cartItem },
               }}
             >
+              {" "}
+              <FontAwesomeIcon
+                icon={faShoppingCart}
+                className='text-success cart-basket-icon'
+              />
               <div id='cart'>
                 <span
                   className={
@@ -43,7 +48,6 @@ const RecipeSearchNav = (props) => {
                   {cart}
                 </span>
               </div>
-              <FontAwesomeIcon icon={faShoppingCart} className='text-success' />
             </Link>
           </li>
           <form className='form-inline my-2 my-lg-0'>

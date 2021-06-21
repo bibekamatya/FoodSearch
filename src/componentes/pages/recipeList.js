@@ -9,7 +9,7 @@ const RecipeList = (props) => {
   var price = Math.trunc(fat);
   return (
     <>
-      <div className='col-md-3 food-card pb-5 px-1 '>
+      <div className='col-md-3 food-card pb-5 px-md-1 px-xl-1 px-1 col-6'>
         <div className='card shadow'>
           <div className='cursor' onClick={() => setModalShow(true)}>
             <img
@@ -24,10 +24,10 @@ const RecipeList = (props) => {
 
           <div className='card-body pt-0'>
             <div className='row'>
-              <div className='col-md-6'>
+              <div className='col-6'>
                 <h6 className='card-title price'>$ {price}</h6>
               </div>
-              <div className='col-md-6 text-right'>
+              <div className='col-6 text-right'>
                 <FontAwesomeIcon
                   icon={faShoppingCart}
                   className='text-success cursor'

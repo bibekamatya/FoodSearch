@@ -53,10 +53,10 @@ const RecipeModal = (props) => {
         </Modal.Header>
 
         <Modal.Body>
-          <div className='row'>
+          <div className='row my-modal'>
             <div className='col-md-6 pt-md-2'>
               <div className='p-1 card shadow'>
-                <img src={img} alt={title} className='img-fluid' />
+                <img src={img} alt={title} className='img-fluid modal-img' />
               </div>
             </div>
             <div className='col-md-6 text-left'>

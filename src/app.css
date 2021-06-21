@@ -145,3 +145,28 @@ p {
   outline: none !important;
   box-shadow: none !important;
 }
+
+@media only screen and (max-width: 768px) {
+  .my-modal .modal-img {
+    height: 80vw !important;
+  }
+  .food-card .card {
+    min-height: auto !important;
+  }
+
+  /* cart */
+  .table th,
+  .table td {
+    font-size: 10px !important;
+    font-weight: 100 !important;
+  }
+  .cart-img {
+    width: 10vw !important;
+    height: 10vw !important;
+  }
+  .cart-amount-icon {
+    font-size: 10px !important;
+    padding: 1px !important;
+    border: 0.1 px !important;
+  }
+}
