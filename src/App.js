@@ -1,5 +1,5 @@
 import Main from "./componentes/main";
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 import "./app.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -20,6 +20,7 @@ const App = () => {
           <Route exact path='/cart' component={Cart} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/about' component={About} />
+          <Redirect to='/' />
         </Switch>
       </div>
     </>
