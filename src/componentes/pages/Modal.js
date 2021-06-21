@@ -71,7 +71,7 @@ const RecipeModal = (props) => {
                 {/* <li className='list-group-item'>Cautions : {cautions}</li> */}
                 <Link
                   to={{
-                    pathname: `FoodSearch/details/${id}`,
+                    pathname: `/details/${id}`,
                     state: {
                       img,
                       title,

@@ -21,7 +21,7 @@ const Navbar = () => {
             : "my-nav navbar navbar-expand-lg fixed-top logo"
         }
       >
-        <NavLink className='navbar-brand' to='/FoodSearch'>
+        <NavLink className='navbar-brand' to='/'>
           <img
             src={logo}
             alt='logo'
@@ -43,17 +43,17 @@ const Navbar = () => {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item active'>
-              <Link className='nav-link' to='/FoodSearch'>
+              <Link className='nav-link' to='/'>
                 Home <span className='sr-only'>(current)</span>
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/FoodSearch/contact'>
+              <Link className='nav-link' to='/contact'>
                 Contact
               </Link>
             </li>{" "}
             <li className='nav-item'>
-              <Link className='nav-link' to='/FoodSearch/about'>
+              <Link className='nav-link' to='/about'>
                 About
               </Link>
             </li>
