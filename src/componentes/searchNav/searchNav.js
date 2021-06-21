@@ -28,7 +28,7 @@ const RecipeSearchNav = (props) => {
             <Link
               className='nav-link cursor'
               to={{
-                pathname: `/FoodSearch/cart`,
+                pathname: `/cart`,
                 state: { cartItem },
               }}
             >
