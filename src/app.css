@@ -24,6 +24,7 @@ a:hover {
   color: rgb(255, 111, 0);
   font-family: cursive;
   padding-top: 5px !important;
+  float: left;
 }
 .cart-icon {
   color: orange;
