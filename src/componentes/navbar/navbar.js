@@ -48,12 +48,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/contact'>
+              <Link className='nav-link' to='/FoodSearch/contact'>
                 Contact
               </Link>
             </li>{" "}
             <li className='nav-item'>
-              <Link className='nav-link' to='/about'>
+              <Link className='nav-link' to='/FoodSearch/about'>
                 About
               </Link>
             </li>
