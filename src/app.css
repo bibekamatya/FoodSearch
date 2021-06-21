@@ -1,0 +1,146 @@
+/* css for app */
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+.page {
+  padding: 100px 0px 0px 0px;
+}
+
+.main-page {
+  min-height: 65vh !important;
+}
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+a:hover {
+  color: hotpink;
+}
+.title {
+  color: rgb(100, 81, 81);
+  font-size: 13px !important;
+  font-family: cursive;
+}
+.price {
+  font-size: 14px;
+  color: rgb(255, 111, 0);
+  font-family: cursive;
+  padding-top: 5px !important;
+}
+.cart-icon {
+  color: orange;
+}
+
+.custom-food-image {
+  border-radius: 1rem 1rem 0 0;
+  width: 500px !important;
+}
+
+.food-card .card,
+.food-card .card-body {
+  border-radius: 1rem;
+}
+.food-card .card {
+  min-height: 360px !important;
+}
+.cursor {
+  cursor: pointer;
+}
+.full-details-arrow {
+  font-size: 10px !important;
+}
+
+p {
+  font-size: 14px;
+}
+
+.content {
+  padding-top: 140px;
+}
+.a {
+  font-size: 12px !important;
+}
+
+.Carousel .card {
+  min-height: 320px;
+}
+.my-custom-scrollbar {
+  position: relative;
+  height: 330px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+.details li,
+.health-label {
+  font-size: 14px;
+}
+.title-Ingredients {
+  font-weight: 700;
+  padding: 15px;
+}
+.modal-header .close {
+  padding: 0;
+  margin: 0;
+}
+.modal-header {
+  padding: 2px !important;
+  margin: 0 2px;
+  border: none;
+}
+.modal-body {
+  padding: 0 0 15px 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #6d6d6d;
+}
+
+.spinner {
+  align-items: center !important;
+}
+
+.App {
+  text-align: center;
+  /* padding-top: 50px; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.cart .img {
+  height: 80px;
+  width: 80px;
+}
+.cart .title {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  color: black !important;
+}
+
+.my-table {
+  position: sticky !important; /* this does the trick */
+  top: 55px !important;
+  background-color: black;
+  transition: 0.1s ease-in-out;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

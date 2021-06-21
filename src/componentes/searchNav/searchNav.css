@@ -1,0 +1,29 @@
+/* css for search-nav */
+
+.nav-search {
+  background-color: white;
+}
+.searched-item {
+  text-transform: capitalize;
+  /* color: teal; */
+  font-weight: 500;
+}
+.searched-item h6 {
+  font-size: 15px;
+}
+
+.cart-basket {
+  font-size: 0.6rem;
+  position: absolute;
+  top: 11px;
+  right: 290px;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  background-color: #418deb;
+  border-radius: 50%;
+}
+
+.hide-price {
+  display: none;
+}
