@@ -7,7 +7,7 @@ import Navbar from "./componentes/navbar/navbar";
 import Contact from "./componentes/pages/contact";
 import About from "./componentes/pages/about";
 import Cart from "./componentes/pages/cart";
-import DetailView from './componentes/pages/detailView';
+import DetailView from "./componentes/pages/detailView";
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
       <div className='page'>
         <Navbar />
         <Switch>
-          <Route exact path='/' component={Main} />
+          <Route exact path='/FoodSearch' component={Main} />
           <Route exact path='/FoodSearch/details/:id' component={DetailView} />
           <Route exact path='/FoodSearch/cart' component={Cart} />
           <Route exact path='/FoodSearch/contact' component={Contact} />
