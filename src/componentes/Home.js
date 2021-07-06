@@ -8,7 +8,7 @@ import FadeLoader from "react-spinners/ClipLoader";
 import { css } from "@emotion/react";
 import Footer from "./footer/footer";
 
-const Main = () => {
+const Home = () => {
   const APP_ID = "278b2b26";
   const APP_KEY = "bf1748fdd50f3a17e68699ef1041e84b";
 
@@ -126,4 +126,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Home;

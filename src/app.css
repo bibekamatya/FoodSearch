@@ -16,8 +16,7 @@ a:hover {
 }
 .title {
   color: rgb(100, 81, 81);
-  font-size: 13px !important;
-  font-family: cursive;
+  font-size: 15px !important;
 }
 .price {
   font-size: 14px;
@@ -39,9 +38,7 @@ a:hover {
 .food-card .card-body {
   border-radius: 1rem;
 }
-.food-card .card {
-  min-height: 360px !important;
-}
+
 .cursor {
   cursor: pointer;
 }

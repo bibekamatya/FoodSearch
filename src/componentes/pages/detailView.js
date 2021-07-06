@@ -14,7 +14,6 @@ const DetailView = (props) => {
     cautions,
     calories,
     fat,
-    price,
   } = props.location.state;
 
   return (
@@ -33,7 +32,6 @@ const DetailView = (props) => {
                   <li className='list-group-item text-capitalize'>
                     Title : <b>{title}</b>
                   </li>
-                  <li className='list-group-item'>Price : $ {price}</li>
                   <li className='list-group-item text-capitalize'>
                     Meal Type : {type}
                   </li>
@@ -70,7 +68,7 @@ const DetailView = (props) => {
           </div>
         </div>
       </div>
-      <div className='pt-5 mt-2 container p-0 Carousel'>
+      <div className='py-5 mt-2 container p-0 Carousel'>
         <h4 className='title-Ingredients text-center'>Ingredients</h4>
         <OwlCarousel
           className='owl-theme'
