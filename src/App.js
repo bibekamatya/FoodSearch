@@ -1,4 +1,3 @@
-import Home from "./componentes/home";
 import { Redirect, Route, Switch } from "react-router-dom";
 import "./app.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -7,6 +6,7 @@ import Navbar from "./componentes/navbar/navbar";
 import Contact from "./componentes/pages/contact";
 import About from "./componentes/pages/about";
 import DetailView from "./componentes/pages/detailView";
+import Home from './componentes/Home';
 
 const App = () => {
   return (

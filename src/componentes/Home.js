@@ -61,20 +61,6 @@ const Home = () => {
     }
   };
 
-  const [CartItem, setCartItem] = useState([]);
-  const [CartIcon, setCartIcon] = useState(0);
-
-  const AddToCart = ({ title, id, img, price }) => {
-    if (CartItem.some((item) => item.id === id)) {
-      return;
-    }
-    setCartIcon(CartIcon + 1);
-
-    setCartItem([
-      ...CartItem,
-      { title: title, id: id, img: img, price: price, quantity: 1 },
-    ]);
-  };
 
   return (
     <>
@@ -85,8 +71,6 @@ const Home = () => {
         onInputChange={onInputChange}
         name={name}
         recipeName={recipeName}
-        cart={CartIcon}
-        cartItem={CartItem}
       />
       <div className='container main-page App px-4 px-md-0' style={{ Height: "800px" }}>
         {Loading ? (
@@ -115,7 +99,6 @@ const Home = () => {
                 cautions={food.recipe.cautions}
                 calories={food.recipe.calories}
                 fat={food.recipe.totalDaily.FAT.quantity}
-                addtocart={AddToCart}
               />
             ))}
           </div>
